@@ -11,24 +11,28 @@
     <div class="container">
       <h1>The National Horse Race</h1>
       <div class="section">
-        <div class="horse">
-          <button id="blue-button" value="blue">Run!</button>
-          <div class="track"><img id="blue-horse" src="img/blue.png" ria-live="polite" aria-atomic="true" alt="blue horse" /></div>
+        <div>
+            <button id="steps-button">Steps</button>
+            <div id="random-num"></div> 
         </div>
         <div class="horse">
-          <button id="pink-button" value="pink">Run!</button>
-          <div class="track"><img id="pink-horse" src="img/pink.jpg" ria-live="polite" aria-atomic="true" alt="pink horse" /></div>
+            <button id="blue-button" value="blue">Run!</button>
+            <div class="track"><img id="blue-horse" src="img/blue.png" aria-live="polite" aria-atomic="true" alt="blue horse" /></div>
         </div>
         <div class="horse">
-          <button id="brown-button" value="brown" >Run!</button>
-          <div class="track"><img id="brown-horse"   src="img/brown.png" aria-live="polite" aria-atomic="true" alt= "brown horse"  /></div>
+            <button id="pink-button" value="pink">Run!</button>
+            <div class="track"><img id="pink-horse" src="img/pink.jpg" aria-live="polite" aria-atomic="true" alt="pink horse" /></div>
         </div>
         <div class="horse">
-          <button id="restart-button" value="restart" >Restart?!</button>
+            <button id="brown-button" value="brown">Run!</button>
+            <div class="track"><img id="brown-horse" src="img/brown.png" aria-live="polite" aria-atomic="true" alt="brown horse" /></div>
         </div>
-      </div>
-      <div  ria-live="polite" aria-atomic="true" id="winner" ></div>
+        <div class="horse">
+            <button id="restart-button" value="restart">Restart?!</button>
+        </div>
     </div>
+    <div aria-live="polite" aria-atomic="true" id="winner"></div>
+</div>
 
     <script src="script.js"></script>
   </body>
