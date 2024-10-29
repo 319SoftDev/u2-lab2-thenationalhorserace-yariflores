@@ -20,7 +20,9 @@ const brownHorse = document.querySelector("#brown-horse");
 const horseWinner = document.querySelector("#winner");
 // restart button
 const restartButton = document.querySelector("#restart-button");
-
+//steps button
+const stepsButton = document.querySelector("#steps-button")
+const randonmNumDisplay = document.querySelector("#random-num");
 
 
 
@@ -34,7 +36,7 @@ const advanceBlue = (e) => {
 
 };
 
-function advancePink(e) {
+const advancePink = (e) => {
 
   pink_position += 1;
   changePosition(pinkHorse, pink_position);
@@ -100,6 +102,12 @@ function resetGame() {
   brownButton.disabled = false;
   restartButton.disabled = true; // Disable restart button until a winner is declared
 }
+
+//steps button
+stepsButton.addEventListener('click',() => {
+  const randonmNum = Math.floor(Math.random() * 3);
+  randonmNumDisplay.innerHTML = randonmNum;
+});
 
 // Event Listeners Here
 blueButton.addEventListener("click", advanceBlue);
